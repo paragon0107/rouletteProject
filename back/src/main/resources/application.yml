@@ -2,20 +2,17 @@ spring:
   application:
     name: point-roulette-backend
   datasource:
-    url: jdbc:h2:mem:roulette;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: ${DB_URL}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
         format_sql: true
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 springdoc:
   api-docs:
@@ -27,14 +24,17 @@ springdoc:
 spring:
   config:
     activate:
-      on-profile: postgres
+      on-profile: local-h2
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/roulette}
-    driver-class-name: org.postgresql.Driver
-    username: ${DB_USERNAME:roulette}
-    password: ${DB_PASSWORD:roulette}
+    url: jdbc:h2:mem:roulette;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
+        dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
