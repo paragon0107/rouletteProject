@@ -1,0 +1,32 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: linear-gradient(160deg, #ecfeff 0%, #f8fafc 45%, #fefce8 100%);
+}
+
+.card {
+  width: min(420px, 100%);
+}
+
+.title {
+  margin: 0;
+}
+
+.description {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error {
+  margin-top: 12px;
+}
