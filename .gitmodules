@@ -1,0 +1,12 @@
+[submodule "back"]
+	path = back
+	url = https://github.com/paragon0107/rouletteBack.git
+	branch = main
+[submodule "front"]
+	path = front
+	url = https://github.com/paragon0107/rouletteFront.git
+	branch = main
+[submodule "webAdmin"]
+	path = webAdmin
+	url = https://github.com/paragon0107/rouletteWebAdmin.git
+	branch = main
