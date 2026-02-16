@@ -1,9 +1,0 @@
-.git
-.gradle
-.gradle-local
-.idea
-build
-out
-node_modules
-*.log
-*.iml
