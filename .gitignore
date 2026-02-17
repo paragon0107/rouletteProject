@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+
+# Local build artifacts
+*.apk
+
+# Flutter/Android generated files in App project
+App/.dart_tool/
+App/build/
+App/android/.gradle/
+App/android/local.properties
+App/.idea/
