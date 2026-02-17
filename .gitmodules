@@ -10,3 +10,7 @@
 	path = webAdmin
 	url = https://github.com/paragon0107/rouletteWebAdmin.git
 	branch = main
+[submodule "app"]
+	path = app
+	url = https://github.com/paragon0107/rouletteMobile.git
+	branch = main
