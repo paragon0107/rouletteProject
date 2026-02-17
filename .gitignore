@@ -5,8 +5,6 @@
 .idea/
 *.iml
 
-# Local build artifacts
-*.apk
 
 # Flutter/Android generated files in App project
 App/.dart_tool/
